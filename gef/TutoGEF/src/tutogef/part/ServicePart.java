@@ -25,16 +25,16 @@ public class ServicePart extends AbstractGraphicalEditPart {
 
 	@Override
 	protected void refreshVisuals() {
-		ServiceFigure figure = (ServiceFigure)getFigure();
-		Service model = (Service)getModel();
-		
+		ServiceFigure figure = (ServiceFigure) getFigure();
+		Service model = (Service) getModel();
+
 		figure.setName(model.getName());
 		figure.setEtage(model.getEtage());
 		figure.setLayout(model.getLayout());
 	}
-	
+
 	@Override
-	public List<Node> getChildren() {
-		return ((Service)getModel()).getChildren();
+	public List<Node> getModelChildren() {
+		return ((Service) getModel()).getChildren();
 	}
 }

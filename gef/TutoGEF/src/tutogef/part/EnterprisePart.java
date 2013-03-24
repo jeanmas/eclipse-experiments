@@ -34,7 +34,7 @@ public class EnterprisePart extends AbstractGraphicalEditPart {
 	}
 	
 	 @Override
-	public List<Node> getChildren() {
+	public List<Node> getModelChildren() {
 		 Enterprise model = (Enterprise)getModel();
 		 return model.getChildren();
 	}

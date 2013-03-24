@@ -32,7 +32,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
     	super.postWindowOpen();
     	IWorkbenchPage page = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage();
     	try {
-			page.openEditor(new MyEditorInput("TutoGEF"), MyGraphicalEditor.ID, false);
+    		page.openEditor(new MyEditorInput("TutoGEF"), MyGraphicalEditor.ID, false);
 		} catch (PartInitException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
