@@ -24,6 +24,7 @@
       <editor
             class="tutogef.MyGraphicalEditor"
             default="true"
+            icon="icons/alt_window_16.gif"
             id="tutogef.mygraphicaleditor"
             name="MyGraphicalEditor">
       </editor>
